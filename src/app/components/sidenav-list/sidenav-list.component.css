@@ -1,0 +1,32 @@
+a {
+    text-decoration: none;
+    color: lightgray;
+}
+
+a:hover{
+    color: rgb(112, 111, 111);
+    font-size: larger;
+    background-color: rgb(107, 107, 107);
+}
+a:active {
+    color: gray;
+}
+
+.nav-caption {
+    display: inline-block;
+    padding-left: 5px ;
+}
+.upper{
+    height: 80vh;
+    width: 250px;
+}
+.toBottom {
+    position: absolute;
+    bottom:0;
+    left: 0;
+    
+    width: 250px;
+}
+ .mat-nav-list, .toBottom, .upper{
+    background-color: rgb(245, 245, 245);
+}

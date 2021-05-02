@@ -1,4 +1,7 @@
 
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <!-- <mat-sidenav-container > 
     <mat-sidenav #sidenav role="navigation" >
         <app-sidenav-list (sidenavClose)="sidenav.close()"></app-sidenav-list>
@@ -6,28 +9,61 @@
     <mat-sidenav-content> -->
     <mat-toolbar>
         <div fxHide.gt-xs>
-            <button mat-icon-button (click)="onToggleSidenav()">
+            <button mat-icon-button [autofocus]="false" (click)="onToggleSidenav()" routerLinkActive="active">
                 <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
             </button>
         </div>
         <div>
-            <a routerLink = "">Home</a>
+            <a class="active-a" routerLink = "" (click)="toHome()"routerLinkActive="active">Home</a>
         </div>
         <div fxFlex fxLayout="row" fxLayoutAlign="end" fxHide.xs>
             <ul fxLayout fxLayoutGap = "15px" class="navigation-items">
                 <li>
-                    <a mat-list-item routerLink="/project">Projects</a>
+                    <a  class="active-a"mat-list-item (click)="toResume()" routerLinkActive="active" routerLink = "/resume">Resume</a>
+                    
                 </li>
                 <li>
-                    <a routerLink="/resume">Resume</a>
+                    <a class="active-a" mat-list-item (click)="toProject()" routerLinkActive="active" routerLink = "/projects">Projects</a>
                 </li>
                 <li>
-                    <a routerLink="/contact">Contact</a>
+                    <a class="active-a" mat-list-item (click)="toContact()" routerLinkActive="active" routerLink = "/contact">Contact</a>
                 </li>
+                
     
             </ul>
+            
         </div>
+        
     </mat-toolbar>
+
+    
+
 <!--     
 </mat-sidenav-content>
 </mat-sidenav-container> -->
+
+
+
+<!-- here app fullpage elector can be replaced by the contents in the app fullpage or just uncomment the contents here and comment the appfullpage selector  |both works| -->
+
+<div class="SPA">
+
+   <app-fullpage></app-fullpage>
+
+
+   <!--  <section id="landing" class="landing-section">
+       <app-landing></app-landing>
+    </section>
+    <section id="resume" class="resume-section">
+        <app-resume></app-resume>
+    </section>
+    <section id="project" class="project-section">
+        <app-projects></app-projects>
+    </section>
+    <section id="contact" class="contact-section">
+        <app-contact></app-contact>
+    </section> -->
+
+
+  </div>
+

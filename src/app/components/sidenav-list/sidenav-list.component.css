@@ -1,6 +1,14 @@
 a {
+
     text-decoration: none;
     color: lightgray;
+}
+a:focus{
+    outline: none !important;
+}
+.nav-caption:focus{
+    outline: none !important;
+    background: transparent !important;
 }
 
 a:hover{

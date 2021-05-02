@@ -3,10 +3,29 @@ a{
     color: gray;
 
 }
+.SPA{
+    
+    scroll-snap-type: mandatory;
+    scroll-snap-type: y mandatory;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+button{
+    outline: none !important;
 
-a:hover, a:active{
+}
+
+::ng-deep .mat-icon-button-overlay {
+    display: none !important;
+}
+button:focus{
+    outline: none  !important;
+    background: transparent !important;
+}
+a:hover{
     color: lightgray;
 }
+
 
 .navigation-items{
     list-style-type: none;
@@ -16,13 +35,22 @@ a:hover, a:active{
 
 mat-toolbar{
     border-radius: 1px;
+    position: fixed;
 }
 
-li{
+/* li{
     display: inline;
    
     overflow: hidden;
+} */
+
+
+.landing-section, .resume-section, .project-section, .contact-section{
+    
+    height: 100vh;
+
 }
+
 
 @media(max-width: 959px) {
     mat-toolbar {

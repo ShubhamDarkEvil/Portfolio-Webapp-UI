@@ -1,0 +1,9 @@
+
+.contact-page{
+    
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(109, 116, 211);
+} 

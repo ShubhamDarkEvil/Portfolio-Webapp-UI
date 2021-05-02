@@ -18,4 +18,24 @@ export class SidenavListComponent implements OnInit {
     this.sidenavClose.emit();
   }
 
+  onSidenavCloseR = () =>{
+    this.sidenavClose.emit();
+    document.getElementById("resume")?.scrollIntoView({behavior:"smooth"});
+  }
+  
+  onSidenavCloseP = () =>{
+    this.sidenavClose.emit();
+    document.getElementById("project")?.scrollIntoView({behavior:"smooth"});
+  }
+  
+  onSidenavCloseC = () =>{
+    this.sidenavClose.emit();
+    document.getElementById("contact")?.scrollIntoView({behavior:"smooth", block:"end"});
+  }
+  onSidenavCloseH = () =>{
+    this.sidenavClose.emit();
+    document.getElementById("landing")?.scrollIntoView({behavior:"smooth", block:"end"});
+  }
+
+
 }

@@ -17,7 +17,8 @@ a:hover{
     background-color: rgb(107, 107, 107);
 }
 a:active {
-    color: gray;
+    /* color: gray; */
+    background-color: rgb(107, 107, 107);
 }
 
 .nav-caption {

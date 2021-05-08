@@ -8,13 +8,13 @@ import { ProjectsComponent } from './components/projects/projects.component';
 import { ResumeComponent } from './components/resume/resume.component';
 const routes: Routes = [
 
-  { path: 'home', component: LandingComponent},
+  // { path: 'home', component: LandingComponent},
 
 
-   {path: '', redirectTo: 'home' , pathMatch: 'full'},
-   { path: 'projects', component: ProjectsComponent},
-   { path: 'contact', component: ContactComponent},
-   { path: 'resume', component: ResumeComponent}
+  //  {path: '', redirectTo: 'home' , pathMatch: 'full'},
+  //  { path: 'projects', component: ProjectsComponent},
+  //  { path: 'contact', component: ContactComponent},
+  //  { path: 'resume', component: ResumeComponent}
 
 ];
 

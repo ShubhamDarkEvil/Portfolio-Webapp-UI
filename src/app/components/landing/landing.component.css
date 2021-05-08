@@ -4,7 +4,10 @@
 
 .landing-page{
     height: 100vh;
+    width: 100%;
     display: flex;
+    flex-grow: none;
+    overflow: hidden;
     align-items: center;
     justify-content: center;
     background-color: thistle;

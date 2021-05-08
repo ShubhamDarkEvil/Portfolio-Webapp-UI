@@ -20,21 +20,21 @@ export class SidenavListComponent implements OnInit {
 
   onSidenavCloseR = () =>{
     this.sidenavClose.emit();
-    document.getElementById("resume")?.scrollIntoView({behavior:"smooth"});
+    // document.getElementById("resume")?.scrollIntoView({behavior:"smooth"});
   }
   
   onSidenavCloseP = () =>{
     this.sidenavClose.emit();
-    document.getElementById("project")?.scrollIntoView({behavior:"smooth"});
+    // document.getElementById("project")?.scrollIntoView({behavior:"smooth"});
   }
   
   onSidenavCloseC = () =>{
     this.sidenavClose.emit();
-    document.getElementById("contact")?.scrollIntoView({behavior:"smooth", block:"end"});
+    // document.getElementById("contact")?.scrollIntoView({behavior:"smooth", block:"end"});
   }
   onSidenavCloseH = () =>{
     this.sidenavClose.emit();
-    document.getElementById("landing")?.scrollIntoView({behavior:"smooth", block:"end"});
+    // document.getElementById("landing")?.scrollIntoView({behavior:"smooth", block:"end"});
   }
 
 

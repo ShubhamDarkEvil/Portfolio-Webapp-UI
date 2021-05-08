@@ -25,6 +25,7 @@
     "@aotearoan/angular-fullpage": "^2.4.25",
     "@fullpage/angular-fullpage": "0.0.15",
     "angular-fullpage.js": "^0.2.6",
+    "animate.css": "^4.1.1",
     "bootstrap": "^4.6.0",
     "fullpage.js": "^3.1.0",
     "jquery": "^3.6.0",

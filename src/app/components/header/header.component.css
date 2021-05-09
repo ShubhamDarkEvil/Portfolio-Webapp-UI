@@ -1,7 +1,10 @@
 a{
     text-decoration:  none;
-    color: gray;
-
+    color: rgb(39, 39, 39);
+    /* font-family: 'Acme', sans-serif; */
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-weight: bold;
+    
 }
 .SPA{
     
@@ -12,6 +15,11 @@ a{
 }
 button{
     outline: none !important;
+}
+button::after{
+    outline: none !important;
+    background: transparent !important;
+
 }
 
 ::ng-deep .mat-icon-button-overlay {
@@ -24,9 +32,14 @@ button{
     
 }
 a:hover{
-    color: lightgray;
-}
+    color: rgb(0, 0, 0);
 
+}
+.active-a:hover, .active-a:active{
+    font-size: larger;
+    /* font-family: 'Pacifico', cursive; */
+    font-weight: lighter;
+}
 
 .navigation-items{
     list-style-type: none;
@@ -37,6 +50,7 @@ a:hover{
 mat-toolbar{
     border-radius: 1px;
     position: fixed;
+    z-index: 2;
 }
 
 /* li{

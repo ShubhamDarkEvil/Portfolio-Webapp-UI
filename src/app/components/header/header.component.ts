@@ -29,6 +29,10 @@ export class HeaderComponent implements OnInit {
     //   this._router.navigateByUrl((this._location.path()));
     
   }
+  onclickReload()
+  {
+    window.location.reload();
+  }
 
   
   toResume(){

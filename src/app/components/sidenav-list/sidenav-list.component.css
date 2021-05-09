@@ -2,9 +2,10 @@ a {
 
     text-decoration: none;
     color: lightgray;
-}
-a:focus{
-    outline: none !important;
+    /* font-family: 'Acme', sans-serif; */
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-weight: bold;
+
 }
 .nav-caption:focus{
     outline: none !important;
@@ -15,12 +16,13 @@ a:hover{
     /* color: rgb(112, 111, 111); */
     font-size: larger;
     /* background-color: rgb(107, 107, 107); */
-    background: linear-gradient(to right, red 50%, blue 50%);
+    
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: large;
+    font-weight: lighter;
+
 }
-a:active {
-    /* color: gray; */
-    background-color: rgb(107, 107, 107);
-}
+
 
 .nav-caption {
     display: inline-block;
@@ -38,5 +40,6 @@ a:active {
     width: 250px;
 }
  .mat-nav-list, .toBottom, .upper{
-    background-color: rgb(245, 245, 245);
+    background-color:whitesmoke;
+    opacity: 1;
 }

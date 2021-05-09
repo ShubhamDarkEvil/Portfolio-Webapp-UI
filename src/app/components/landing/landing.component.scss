@@ -1,7 +1,9 @@
 .p{
     margin-top: 60px;
 }
-
+*{
+  box-sizing: border-box;
+}
 .landing-page{
     /* margin-top: 60px; */
     // height: 100vh;
@@ -9,72 +11,239 @@
     // display: flex;
     // flex-grow: none;
      overflow: hidden;
-     background-color:whitesmoke;
+     overflow-y: hidden;
+     background-color: whitesmoke;
     // align-items: center;
     // /* justify-content: center; */
     // background-color: rgb(248, 89, 89);
-    z-index: -1;
-    
-   
     // position: relative;
-
+    position: relative;
+    // margin-top:60px ;
+    // padding-top: 0px;
+    
+    
+    z-index: 0;
 }
 #particles-js {
-  
   height: 100vh;
+  // height: 100vh;
   width: 100vw;
 
 }
 .intro{
-  
+  position: absolute;
+
     left: 0;
    
-  //  margin-top: -200px;
-    margin-top: -300px;
-   padding-left: 15px;
+    margin-top: -200px;
   
 }
 
-.greet{
+
+.hi-greet{
     // padding-left: 5px;
     font-size: 50px;
     font-family: 'Josefin Sans', sans-serif;
+    background-color: rgba(245, 222, 179, 0.205);
 }
-.name, .job{
+.name-greet{
+    // padding-top: 40px;
+    margin-top:60px;
     font-size: 55px;
     font-family: 'Josefin Sans', sans-serif;
-    
+    background: rgba(60, 198, 252, 0.068);
+    height: 35px;
+    // z-index: -1;
+
+   
+}
+.hi-greet, .name-greet{
+  position: absolute;
+  top: 250px;
+  margin-left: 15x;
+  padding-left: 10px;
+  opacity: 1 !important;
+  
 }
 
+
+
+.bio{
+  display: flex;
+ flex-direction: column;
+  position:absolute;
+  top: 400px;
+  margin-left: 15x;
+  padding-left: 15px;
+  // font-family: 'Sans', sans-serif;
+  justify-content: space-around;
+  .fsd,.photo{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 30px;
+  font-weight: normal;
+  }
+  .fsd{
+    background-color: rgba(174, 236, 236, 0.233);
+  }
+  .photo{
+    background-color: rgba(64, 147, 224, 0.075);
+  }
+  .ribbion1{
+    position: absoulte;
+    top: 400px;
+  margin-left: 15x;
+  padding-left: 15px;
+    width: 60px;
+    height: 10px;
+    background-color: rgb(62, 182, 6);
+  }
+
+}
+.about-me-intro{
+  position: absolute;
+  top:  350px;
+  margin-left: 15x;
+  padding-left: 10px;
+  opacity: 1 !important;
+  color: black;
+  display: none;
+
+}
+.scroll-text{
+ 
+  
+  font-family: 'Quattrocento Sans', sans-serif;
+
+
+}
+.scroll{
+  position: absolute;
+  float: right;
+  height: 20px;
+  bottom: 30px;
+  right: 50%;
+  left: 50%;
+  margin-bottom: 10px;
+  
+  a{
+    text-decoration: none;
+   }
+ 
+
+
+}
+@media(hover: hover) and (pointer: fine) {
+ .scroll-text:hover{
+  font-size: 20px;
+}
+}
+
+
+
+@media(hover: hover) and (pointer: fine) {
+
+  .name-greet:hover{
+    font-size: 60px;
+    background-color: rgba(255, 0, 0, 0.13);
+  }
+ 
+}
+
+
+.scroll-text{
+  top: 90px;
+  right: 10px;
+  color: black;
+}
 
 
 
 @media only screen and (max-width: 600px) {
    
-    .greet{
+    .hi-greet{
         font-size: 40px;
     }
-    .name{
+    .name-greet{
         font-size: 45px;
     }
-  .landing-page{
-      
-      height: 100vh;
-  }
+    .scroll{
+      position: absolute;
+      float: right;
+      height: 20px;
+      // bottom: 0;
+      // right: 0;
+      // margin-bottom: 70px;
+      // padding-bottom: 10px;
+      // margin-right: 15px;
+      bottom: 30px;
+  right: 50%;
+  left: 50%;
+  margin-bottom: 50px;
+      a{
+        text-decoration: none;
+      }
+    
+    }
 
 }
 
-  @media only screen and (max-width: 360px) {
+  @media only screen and (max-width: 373px) {
    
-    .greet{
+    .hi-greet{
         font-size: 30px;
+        
     }
-    .name{
+    .name-greet{
         font-size: 35px;
     }
-    .landing-page{
-        height: 100vh;
+    .scroll{
+      position: absolute;
+      float: right;
+      height: 20px;
+      // bottom: 0;
+      // right: 0;
+      // margin-bottom: 70px;
+      // padding-bottom: 10px;
+      // margin-right: 15px;
+      bottom: 30px;
+      right: 50%;
+      left: 50%;
+      margin-bottom: 50px;
+      a{
+        text-decoration: none;
+      }
+    
     }
+    
+  }
+  @media only screen and (max-width: 295px) {
+   
+    .hi-greet{
+        font-size: 26px;
+    }
+    .name-greet{
+        font-size: 30px;
+    }
+    .scroll{
+      position: absolute;
+      float: right;
+      height: 20px;
+      // bottom: 0;
+      // right: 0;
+      // margin-bottom: 70px;
+      // padding-bottom: 10px;
+      // margin-right: 15px;
+      bottom: 30px;
+      right: 50%;
+      left: 50%;
+      margin-bottom: 50px;
+      a{
+        text-decoration: none;
+      }
+    
+    }
+ 
+
   }
 
   /* ------------------------- */

@@ -1,4 +1,9 @@
-
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Acme&family=Pacifico&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans&display=swap" rel="stylesheet">
 
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
@@ -15,12 +20,13 @@
             </button>
         </div>
         <div>
-            <a class="active-a"   href="#home" routerLinkActive="active">Home</a>
+            <!-- (click)="onclickReload()" -->
+            <a class="active-a"   href="#home"  routerLinkActive="active">Home</a> 
         </div>
         <div fxFlex fxLayout="row" fxLayoutAlign="end" fxHide.xs>
             <ul fxLayout fxLayoutGap = "15px" class="navigation-items">
                 <li>
-                    <a  href="#resume" class="active-a"mat-list-item  routerLinkActive="active" >Resume</a>
+                    <a  href="#resume" class="active-a"mat-list-item   >Resume</a>
                     
                 </li>
                 <li>

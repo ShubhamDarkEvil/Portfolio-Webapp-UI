@@ -33,7 +33,8 @@
               "node_modules/fullpage.js/dist/fullpage.min.css"
             ],
             "scripts": [
-              "node_modules/fullpage.js/vendors/scrolloverflow.min.js"
+              "node_modules/fullpage.js/vendors/scrolloverflow.min.js",
+              "node_modules/particles.js/particles.js"
               
             ]
           },

@@ -12,16 +12,16 @@ a{
 }
 button{
     outline: none !important;
-    
-
 }
 
 ::ng-deep .mat-icon-button-overlay {
     display: none !important;
 }
-button:focus{
+.mib:enabled{
     outline: none  !important;
     background: transparent !important;
+
+    
 }
 a:hover{
     color: lightgray;
@@ -45,16 +45,20 @@ mat-toolbar{
     overflow: hidden;
 } */
 
-
-.landing-section, .resume-section, .project-section, .contact-section{
+ .resume-section, .project-section, .contact-section{
     
     height: 100vh;
+
+}
+.landing-section{
+    height: 90vh;
 
 }
 
 
 @media(max-width: 959px) {
     mat-toolbar {
+        height: 60px;
         border-radius: 0px;
     }
 }

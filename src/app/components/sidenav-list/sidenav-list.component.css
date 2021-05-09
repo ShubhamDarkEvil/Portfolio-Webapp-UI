@@ -12,9 +12,10 @@ a:focus{
 }
 
 a:hover{
-    color: rgb(112, 111, 111);
+    /* color: rgb(112, 111, 111); */
     font-size: larger;
-    background-color: rgb(107, 107, 107);
+    /* background-color: rgb(107, 107, 107); */
+    background: linear-gradient(to right, red 50%, blue 50%);
 }
 a:active {
     /* color: gray; */

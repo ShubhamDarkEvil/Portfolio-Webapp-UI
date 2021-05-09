@@ -14,7 +14,8 @@ import { ResumeComponent } from './components/resume/resume.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { LandingComponent } from './components/landing/landing.component';
-
+// import { ParticlesModule } from 'angular-particle';
+// import {NgParticlesModule} from "ng-particles";
 
 // import { AngularFullpageModule } from '@fullpage/angular-fullpage';
 import { HomeComponent } from './components/home/home.component';
@@ -35,13 +36,16 @@ import ScrollSnap from 'scroll-snap';
     
     
     
+    
   ],
   imports: [
+    
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
     FlexLayoutModule
+    
     // AngularFullpageModule
     
   ],

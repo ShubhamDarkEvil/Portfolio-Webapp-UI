@@ -51,6 +51,7 @@ mat-toolbar{
     border-radius: 1px;
     position: fixed;
     z-index: 2;
+    background-color: whitesmoke;
 }
 
 /* li{
@@ -64,11 +65,6 @@ mat-toolbar{
     height: 100vh;
 
 }
-.landing-section{
-    height: 90vh;
-
-}
-
 
 @media(max-width: 959px) {
     mat-toolbar {

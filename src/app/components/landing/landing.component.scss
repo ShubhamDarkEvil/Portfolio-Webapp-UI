@@ -1,9 +1,4 @@
-.p{
-    margin-top: 60px;
-}
-*{
-  box-sizing: border-box;
-}
+
 .landing-page{
     /* margin-top: 60px; */
     // height: 100vh;
@@ -25,11 +20,15 @@
     z-index: 0;
 }
 #particles-js {
-  height: 100vh;
+  // padding-top: 60px;
+  // height: calc(  (1vh * 100) );
+  height: calc(var(--vh, 1vh) * 100);
+   z-index: 0;
   // height: 100vh;
   width: 100vw;
-
+  background-color: whitesmoke;
 }
+
 .intro{
   position: absolute;
 
@@ -38,6 +37,13 @@
     margin-top: -200px;
   
 }
+
+// .hi{
+//   display: flex;
+//   flex: 1;
+//   width: 200px;
+//   height: 120px;
+// }
 
 
 .hi-greet{
@@ -75,7 +81,7 @@
   top: 400px;
   margin-left: 15x;
   padding-left: 15px;
-  // font-family: 'Sans', sans-serif;
+  // font-family: 'Sa', sans-serif;
   justify-content: space-around;
   .fsd,.photo{
     font-family: 'Josefin Sans', sans-serif;
@@ -158,94 +164,217 @@
 
 
 
-@media only screen and (max-width: 600px) {
+// @media(orientation:landscape)
+// {
+// //   .hi-greet{
+// //     font-size: 40px;
+// // }
+// // .name-greet{
+// //     font-size: 45px;
+// // }
+// // .scroll{
+// //   position: absolute;
+// //   float: right;
+// //   height: 20px;
+// //   // bottom: 0;
+// //   // right: 0;
+// //   // margin-bottom: 70px;
+// //   // padding-bottom: 10px;
+// //   // margin-right: 15px;
+// //   bottom: 30px;
+// // right: 50%;
+// // left: 50%;
+// // margin-bottom: 50px;
+// //   a{
+// //     text-decoration: none;
+// //   }
+
+// // }
+// // #particles-js {
+// //   // padding-top: 60px;
+// //   height: calc(  (1vh * 100) );
+  
+// //   // height: 100vh;
+// //   width: 100vw;
+// //   background-color: whitesmoke;
+// // }
+  
+// // }
+
+// @media only screen and (max-width: 600px) {
    
-    .hi-greet{
-        font-size: 40px;
-    }
-    .name-greet{
-        font-size: 45px;
-    }
-    .scroll{
-      position: absolute;
-      float: right;
-      height: 20px;
-      // bottom: 0;
-      // right: 0;
-      // margin-bottom: 70px;
-      // padding-bottom: 10px;
-      // margin-right: 15px;
-      bottom: 30px;
-  right: 50%;
-  left: 50%;
-  margin-bottom: 50px;
-      a{
-        text-decoration: none;
-      }
+//     .hi-greet{
+//         font-size: 40px;
+//     }
+//     .name-greet{
+//         font-size: 45px;
+//     }
+//     .scroll{
+//       position: absolute;
+//       float: right;
+//       height: 20px;
+//       // bottom: 0;
+//       // right: 0;
+//       // margin-bottom: 70px;
+//       // padding-bottom: 10px;
+//       // margin-right: 15px;
+//       bottom: 30px;
+//   right: 50%;
+//   left: 50%;
+//   margin-bottom: 50px;
+//       a{
+//         text-decoration: none;
+//       }
     
-    }
+//     }
+//     #particles-js {
+//       // padding-top: 60px;
+//       height: calc(  (1vh * 100) );
+      
+//       // height: 100vh;
+//       width: 100vw;
+//       background-color: whitesmoke;
+//     }
 
-}
+// }
 
-  @media only screen and (max-width: 373px) {
+//   @media only screen and (max-width: 373px) {
    
-    .hi-greet{
-        font-size: 30px;
+//     .hi-greet{
+//         font-size: 30px;
         
-    }
-    .name-greet{
-        font-size: 35px;
-    }
-    .scroll{
-      position: absolute;
-      float: right;
-      height: 20px;
-      // bottom: 0;
-      // right: 0;
-      // margin-bottom: 70px;
-      // padding-bottom: 10px;
-      // margin-right: 15px;
-      bottom: 30px;
-      right: 50%;
-      left: 50%;
-      margin-bottom: 50px;
-      a{
-        text-decoration: none;
-      }
+//     }
+//     .name-greet{
+//         font-size: 35px;
+//     }
+//     .scroll{
+//       position: absolute;
+//       float: right;
+//       height: 20px;
+//       // bottom: 0;
+//       // right: 0;
+//       // margin-bottom: 70px;
+//       // padding-bottom: 10px;
+//       // margin-right: 15px;
+//       bottom: 30px;
+//       right: 50%;
+//       left: 50%;
+//       margin-bottom: 50px;
+//       a{
+//         text-decoration: none;
+//       }
     
-    }
+//     }
+//     #particles-js {
+//       // padding-top: 60px;
+//       height: calc(  (1vh * 100) );
+      
+//       // height: 100vh;
+//       width: 100vw;
+//       background-color: whitesmoke;
+//     }
     
-  }
-  @media only screen and (max-width: 295px) {
+    
+//   }
+//   @media only screen and (max-width: 295px) {
    
-    .hi-greet{
-        font-size: 26px;
-    }
-    .name-greet{
-        font-size: 30px;
-    }
-    .scroll{
-      position: absolute;
-      float: right;
-      height: 20px;
-      // bottom: 0;
-      // right: 0;
-      // margin-bottom: 70px;
-      // padding-bottom: 10px;
-      // margin-right: 15px;
-      bottom: 30px;
-      right: 50%;
-      left: 50%;
-      margin-bottom: 50px;
-      a{
-        text-decoration: none;
-      }
+//     .hi-greet{
+//         font-size: 26px;
+//     }
+//     .name-greet{
+//         font-size: 30px;
+//     }
+//     .scroll{
+//       position: absolute;
+//       float: right;
+//       height: 20px;
+//       // bottom: 0;
+//       // right: 0;
+//       // margin-bottom: 70px;
+//       // padding-bottom: 10px;
+//       // margin-right: 15px;
+//       bottom: 30px;
+//       right: 50%;
+//       left: 50%;
+//       margin-bottom: 50px;
+//       a{
+//         text-decoration: none;
+//       }
     
-    }
- 
+//     }
+//     #particles-js {
+//       // padding-top: 60px;
+//       height: calc(  (1vh * 100) );
+      
+//       // height: 100vh;
+//       width: 100vw;
+//       background-color: whitesmoke;
+//     }
+   
+//   }
+// }
 
-  }
 
   /* ------------------------- */
 
- 
+// @media(orientation:landscape)
+// {
+//   .hi-greet, .name-greet{
+//     position: absolute;
+//     top: 100px;
+//     margin-left: 15x;
+//     padding-left: 10px;
+//     opacity: 1 !important;
+    
+//   }
+
+//   .bio{
+//     top: 250px;
+//   }
+
+//----------------------------media queries for mobile responsive --------------------------//
+
+@media (max-width: 460px)
+{
+  .hi-greet{
+  
+    font-size: 40px;
+  }
+  .name-greet{
+  
+    font-size: 45px;
+  }
+}
+
+@media (max-width: 380px)
+{
+  .hi-greet{
+  
+    font-size: 35px;
+  }
+  .name-greet{
+  
+    font-size: 40px;
+  }
+
+
+  .bio{
+    top: 400px;
+  }
+}
+
+
+
+//--------------landscape mode mobile -------------//
+
+@media   (max-height: 393px){
+  .hi-greet, .name-greet{
+     top: 100px;
+   }
+
+   .bio{
+    top: 250px;
+   }
+}
+
+
